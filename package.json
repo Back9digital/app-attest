@@ -13,8 +13,7 @@
     "ios/Sources",
     "ios/Tests",
     "Package.swift",
-    "AppAttest.podspec",
-    "src/"
+    "AppAttest.podspec"
   ],
   "author": "Matt Turner & Solomon Paramel",
   "license": "MIT",

@@ -1,0 +1,41 @@
+{
+  "api": {
+    "name": "AppAttestPlugin",
+    "slug": "appattestplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "generateKey",
+        "signature": "() => Promise<{ keyId: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ keyId: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "generatekey"
+      },
+      {
+        "name": "getAttestation",
+        "signature": "(options: { keyId: string; clientData: string; }) => Promise<{ attestation: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ keyId: string; clientData: string; }"
+          }
+        ],
+        "returns": "Promise<{ attestation: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "getattestation"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
