@@ -1,3 +1,4 @@
 export interface AppAttestPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  generateKey(): Promise<{ keyId: string }>;
+  getAttestation(options: { keyId: string; clientData: string }): Promise<{ attestation: string }>;
 }
