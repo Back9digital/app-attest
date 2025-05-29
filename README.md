@@ -36,7 +36,7 @@ isSupported() => Promise<{ supported: boolean; }>
 ### generateKey(...)
 
 ```typescript
-generateKey(options: { keyId: string; }) => Promise<{ keyId: string; }>
+generateKey() => Promise<{ keyId: string; }>
 ```
 
 | Param         | Type                            |

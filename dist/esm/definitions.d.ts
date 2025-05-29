@@ -2,9 +2,7 @@ export interface AppAttestPlugin {
     isSupported(): Promise<{
         supported: boolean;
     }>;
-    generateKey(options: {
-        keyId: string;
-    }): Promise<{
+    generateKey(): Promise<{
         keyId: string;
     }>;
     getAttestation(options: {
