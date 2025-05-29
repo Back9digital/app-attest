@@ -13,8 +13,7 @@ npx cap sync
 
 <docgen-index>
 
-* [`isSupported()`](#issupported)
-* [`generateKey(...)`](#generatekey)
+* [`generateKey()`](#generatekey)
 * [`getAttestation(...)`](#getattestation)
 
 </docgen-index>
@@ -22,26 +21,11 @@ npx cap sync
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### isSupported()
-
-```typescript
-isSupported() => Promise<{ supported: boolean; }>
-```
-
-**Returns:** <code>Promise&lt;{ supported: boolean; }&gt;</code>
-
---------------------
-
-
-### generateKey(...)
+### generateKey()
 
 ```typescript
 generateKey() => Promise<{ keyId: string; }>
 ```
-
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ keyId: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ keyId: string; }&gt;</code>
 
@@ -51,14 +35,14 @@ generateKey() => Promise<{ keyId: string; }>
 ### getAttestation(...)
 
 ```typescript
-getAttestation(options: { keyId: string; challenge: string; }) => Promise<{ attestationObject: string; }>
+getAttestation(options: { keyId: string; clientData: string; }) => Promise<{ attestation: string; }>
 ```
 
-| Param         | Type                                               |
-| ------------- | -------------------------------------------------- |
-| **`options`** | <code>{ keyId: string; challenge: string; }</code> |
+| Param         | Type                                                |
+| ------------- | --------------------------------------------------- |
+| **`options`** | <code>{ keyId: string; clientData: string; }</code> |
 
-**Returns:** <code>Promise&lt;{ attestationObject: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ attestation: string; }&gt;</code>
 
 --------------------
 
