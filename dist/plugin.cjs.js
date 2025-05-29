@@ -4,5 +4,5 @@ var core = require('@capacitor/core');
 
 const AppAttest = core.registerPlugin('AppAttest');
 
-module.exports = AppAttest;
+exports.AppAttest = AppAttest;
 //# sourceMappingURL=plugin.cjs.js.map

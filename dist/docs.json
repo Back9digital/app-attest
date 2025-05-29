@@ -6,9 +6,25 @@
     "tags": [],
     "methods": [
       {
-        "name": "generateKey",
-        "signature": "() => Promise<{ keyId: string; }>",
+        "name": "isSupported",
+        "signature": "() => Promise<{ supported: boolean; }>",
         "parameters": [],
+        "returns": "Promise<{ supported: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "issupported"
+      },
+      {
+        "name": "generateKey",
+        "signature": "(options: { keyId: string; }) => Promise<{ keyId: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ keyId: string; }"
+          }
+        ],
         "returns": "Promise<{ keyId: string; }>",
         "tags": [],
         "docs": "",
@@ -17,15 +33,15 @@
       },
       {
         "name": "getAttestation",
-        "signature": "(options: { keyId: string; clientData: string; }) => Promise<{ attestation: string; }>",
+        "signature": "(options: { keyId: string; challenge: string; }) => Promise<{ attestationObject: string; }>",
         "parameters": [
           {
             "name": "options",
             "docs": "",
-            "type": "{ keyId: string; clientData: string; }"
+            "type": "{ keyId: string; challenge: string; }"
           }
         ],
-        "returns": "Promise<{ attestation: string; }>",
+        "returns": "Promise<{ attestationObject: string; }>",
         "tags": [],
         "docs": "",
         "complexTypes": [],
