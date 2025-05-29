@@ -4,4 +4,4 @@ import type { AppAttestPlugin } from './definitions';
 
 const AppAttest = registerPlugin<AppAttestPlugin>('AppAttest');
 export * from './definitions'; // export types
-export { AppAttest };
+export default AppAttest;
