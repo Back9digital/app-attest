@@ -1,11 +1,9 @@
-var capacitorAppAttest = (function (exports, core) {
+var capacitorAppAttest = (function (core) {
 	'use strict';
 
 	const AppAttest = core.registerPlugin('AppAttest');
 
-	exports.AppAttest = AppAttest;
+	return AppAttest;
 
-	return exports;
-
-})({}, capacitorExports);
+})(capacitorExports);
 //# sourceMappingURL=plugin.js.map
